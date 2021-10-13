@@ -1,4 +1,43 @@
 import wikipedia, random
+import os, sys
+
+def config():
+    print ("Bienvenido a la configuracion del bot :D\n\n")
+    loadconfig = input('Usar configuracion por defecto?(y/n)-->')
+    if loadconfig == 'y':
+        if os.path.exists('token.txt'):
+            fconfig = open('token.txt', 'r')
+            lineas = fconfig.readlines()
+            token = lineas[0]  
+            fconfig.close()
+            if os.name == 'nt':
+                os.system("cls")
+            else:
+                os.system("clear")
+            return token
+
+        else:
+            print('Configuracion no detectada')
+            print('Creando configuracion')
+            loadconfig = 'n'
+
+    if loadconfig == 'n':
+        token = input("Ingresa el token-->")     
+        fconfig = open('token.txt', 'a')
+        fconfig.write(token)
+        fconfig.close()
+        if os.name == 'nt':
+            os.system("cls")
+        else:
+            os.system("clear")
+        return config
+        
+    else:
+        print ('Parametro no valido, intentalo de nuevo.')
+        sys.exit()
+
+
+
 
 def definiciones(palabra):
     """Busquedas de definiciones en wikipedia """

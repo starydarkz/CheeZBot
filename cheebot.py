@@ -5,7 +5,9 @@ from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ChatAction
 import functions
 import time, threading
 
-token = open("credentials/token.txt").read()
+print ("Iniciando a CheeZBot....")
+token = functions.config()
+print ("\nCheeZBot ha sido iniciado...")
 updater = Updater(token=token, use_context=True)
 admins = ["@Dark_zly"]
 
