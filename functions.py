@@ -58,8 +58,8 @@ def add_questions(user_say):
     """Añadir preguntas a la base de datos """
     
     with open("db/questions.txt", "a") as file:
-        file.write(user_say)
         file.write("\n")
+        file.write(user_say)
         file.close()
 
 def read_questions():

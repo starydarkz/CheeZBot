@@ -1,4 +1,2 @@
-¿Que es una direccion ip?
 ¿Que es un buffer overflow?
 ¿Que es un hacker?
-¿Que es mas seguro, un iphone o un android?
