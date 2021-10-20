@@ -2,4 +2,3 @@
 ¿Que es un buffer overflow?
 ¿Que es un hacker?
 ¿Que es mas seguro, un iphone o un android?
-pregunta 666

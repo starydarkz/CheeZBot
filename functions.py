@@ -41,24 +41,19 @@ def config():
 
 def definiciones(palabra):
     """Busquedas de definiciones en wikipedia """
-    
+    #Config library wikipedia
     wikipedia.set_lang("es")
-    try:
+    
+    try: #Obtener la informacion y retornarla
         resumen = wikipedia.summary(palabra, sentences = 1)
         url = (wikipedia.page(palabra).url)
         resultado = (resumen + "\n\nMas info: " + url)
         return resultado
-    except:
-        #search = wikipedia.search(palabra, results=3)
+    except: #Si no encuentra la info mensaje de error
         error =  ("No se ha encontrado esta definicion...")
-        """resultado = ""
-        for num in range(len(search)):
-            resultado = (resultado + f"{num}-> " + search[num] + "\n")
-        resultado = (error + resultado)
-        return resultado"""
         return error
 
-#Pregunta del dia
+#Preguntas aleatorias
 def add_questions(user_say):
     """Añadir preguntas a la base de datos """
     
@@ -80,3 +75,6 @@ def random_questions():
     question = random.choice(open("db/questions.txt").readlines())
     question = ("🛎La pregunta del dia es:🛎\n\n" + question)
     return question
+
+def help():
+    pass
