@@ -1,9 +1,5 @@
-'''
-Version: 1.0
+# Version: 1.1 - Create by: StaryDarkz
 
-Bot de la Comunidad Hacking Etico en Español > t.me/HackingEticoEs
-Alias del bot: t.me/thechee_bot
-'''
 from telegram.ext import Updater, CommandHandler, Filters
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ChatAction
 import functions
@@ -13,7 +9,7 @@ print ("Iniciando a CheeZBot....")
 token = functions.config()
 print ("\nCheeZBot ha sido iniciado...")
 updater = Updater(token=token, use_context=True)
-admins = ["@Dark_zly"]
+admins = ["@starydarkz"]
 
 #Commandos generales
 def start(update, context):
