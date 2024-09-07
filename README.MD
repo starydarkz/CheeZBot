@@ -1,5 +1,7 @@
 # Chee Bot
 
+CheeZbot es un bot de telegram el cual es capaz de enviar retos en formas de preguntas a los miembros de un grupo de Telegram, se alimenta de aportaciones de los mismos miembros, ademas de tener una funcion para buscar definiciones de wikipedia y una base de datos internas de preguntas y respuestas
+
 
 ## Requisitos:
 
