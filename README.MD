@@ -11,8 +11,8 @@ CheeZbot es un bot de telegram el cual es capaz de enviar retos en formas de pre
 
 ## Configuracion:
 
-> 1. Se debe modificar el archivo cheebot.py y en la linea 12 respecto a la variable admins, se le debe reemplazar el contenido con la lista de los administradores
-> 2. Al iniciar cheebot.py te pedira si cargar una nueva configuracion, al darle que si este hara unas preguntas talvez como el Token del bot, entre otras cosas, esto creara un archivo de configuracion que luego podra cargarse automaticamente.
+1. Se debe modificar el archivo cheebot.py y en la linea 12 respecto a la variable admins, se le debe reemplazar el contenido con la lista de los administradores
+2. Al iniciar cheebot.py te pedira si cargar una nueva configuracion, al darle que si este hara unas preguntas talvez como el Token del bot, entre otras cosas, esto creara un archivo de configuracion que luego podra cargarse automaticamente.
 
 
 ## Comandos
